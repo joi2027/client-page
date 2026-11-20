@@ -1,0 +1,132 @@
+:root {
+  --forest: #164b3a;
+  --plum: #50335b;
+  --pink: #e6a2b5;
+  --cream: #f7f5ef;
+}
+
+body {
+  color: #27332d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-nav {
+  background: var(--forest);
+}
+
+.site-nav .navbar-brand,
+.site-nav .nav-link {
+  color: #fff;
+}
+
+.intro {
+  color: #fff;
+  background: var(--forest);
+}
+
+.intro .lead {
+  color: #e2e9e3;
+}
+
+.eyebrow {
+  color: var(--plum);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.intro .eyebrow {
+  color: var(--pink);
+}
+
+.listing-card {
+  border-color: #e4e6e1;
+}
+
+.listing-card .card-body {
+  padding: 1.25rem;
+}
+
+.home-photo {
+  display: grid;
+  min-height: 205px;
+  place-items: center;
+  overflow: hidden;
+  color: var(--forest);
+  background: linear-gradient(135deg, #e8eee8, #f3e8ec);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.home-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.home-photo-large {
+  min-height: 340px;
+}
+
+.rent {
+  color: var(--forest);
+  white-space: nowrap;
+}
+
+.rent span {
+  color: #68736c;
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+.btn-primary {
+  border-color: var(--forest);
+  background: var(--forest);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  border-color: #10392c;
+  background: #10392c;
+}
+
+.about-section {
+  background: var(--cream);
+}
+
+.home-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.5rem;
+  padding-left: 1.1rem;
+}
+
+.inquiry-card {
+  padding: 1.25rem;
+  border: 1px solid #e4e6e1;
+  border-top: 4px solid var(--pink);
+  border-radius: .4rem;
+}
+
+.form-note {
+  color: var(--forest);
+  font-size: .85rem;
+}
+
+.site-footer {
+  color: #fff;
+  background: var(--forest);
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .home-photo-large {
+    min-height: 230px;
+  }
+}
