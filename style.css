@@ -7,16 +7,46 @@
 
 body {
   color: #27332d;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.site-nav {
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.site-header {
+  padding: 1rem 0;
   background: var(--forest);
 }
 
-.site-nav .navbar-brand,
-.site-nav .nav-link {
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem 2rem;
+}
+
+#site-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+#site-title a,
+.site-header .nav-link {
   color: #fff;
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .75rem;
+}
+
+.site-header .nav-link:hover,
+.site-footer a:hover {
+  color: var(--pink);
 }
 
 .intro {
@@ -123,6 +153,7 @@ body {
 
 .site-footer a {
   color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 575.98px) {
